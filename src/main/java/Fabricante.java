@@ -10,7 +10,7 @@ public class Fabricante {
 		
 	}
 	
-	static Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		return Vehiculo.fabricaMayorVentas();
 	}
 	

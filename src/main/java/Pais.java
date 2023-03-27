@@ -8,7 +8,7 @@ public class Pais {
 		
 	}
 	
-	static Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		return Vehiculo.paisMasVendedor();
 	}
 	
