@@ -10,6 +10,10 @@ public class Fabricante {
 		
 	}
 	
+	static Fabricante fabricaMayorVentas() {
+		return Vehiculo.fabricaMayorVentas();
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}

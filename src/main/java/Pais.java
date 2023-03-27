@@ -8,6 +8,10 @@ public class Pais {
 		
 	}
 	
+	static Pais paisMasVendedor() {
+		return Vehiculo.paisMasVendedor();
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
