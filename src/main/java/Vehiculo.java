@@ -27,7 +27,7 @@ public class Vehiculo {
 		
 	}
 	
-	public static String paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		ArrayList<Fabricante> listaFabricas = new ArrayList<Fabricante>();
 		for(Vehiculo vehiculo : listaVehiculos) {
 			listaFabricas.add(vehiculo.getFabricante());
@@ -46,11 +46,11 @@ public class Vehiculo {
 			
 		}
 		
-		return mayor.getNombre();
+		return mayor;
 			
 	}
 	
-	public static String fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		ArrayList<Fabricante> listaFabricas = new ArrayList<Fabricante>();
 		for(Vehiculo vehiculo : listaVehiculos) {
 			listaFabricas.add(vehiculo.getFabricante());
@@ -64,7 +64,7 @@ public class Vehiculo {
 			
 		}
 		
-		return mayor.getNombre();
+		return mayor;
 	
 	}
 		
@@ -158,6 +158,14 @@ public class Vehiculo {
 	
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
+	}
+	
+	public int getCantidadVehiculos() {
+		return cantidadVehiculos;
+	}
+	
+	public void setCantidadVehiculos(int cantidadVehiculos) {
+		Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
 
 }
