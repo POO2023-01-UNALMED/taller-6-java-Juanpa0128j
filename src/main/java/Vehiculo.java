@@ -20,6 +20,7 @@ public class Vehiculo {
 		this.velocidadMaxima = velocidadMaxima;
 		this.nombre = nombre;
 		this.precio = precio;
+		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		cantidadVehiculos++;
