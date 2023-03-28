@@ -59,20 +59,19 @@ public class Vehiculo {
 		
 		Fabricante mayor = listaFabricas.get(0);
 		for(int i = 0; i < listaFabricas.size() - 1; i++) {
-			if (ocurrenciasFabricante(listaFabricas.get(i), listaFabricas) < ocurrenciasFabricante(listaFabricas.get(i + 1), listaFabricas)) {
+			if (ocurrenciasFabricante(mayor, listaFabricas) < ocurrenciasFabricante(listaFabricas.get(i + 1), listaFabricas)) {
 				mayor = listaFabricas.get(i + 1);
 			}
 			
-		}
+		}	
 		
 		return mayor;
-	
 	}
 		
 	private static int ocurrenciasPais(Pais a, ArrayList<Pais> listaPaises) {
 		int contador = 0;
 		for (Pais pais : listaPaises) {
-			if (a == pais){
+			if (pais == a){
 				contador++;
 			}
 		}
@@ -83,11 +82,12 @@ public class Vehiculo {
 	private static int ocurrenciasFabricante(Fabricante a, ArrayList<Fabricante> listaFabricas) {
 		int contador = 0;
 		for (Fabricante fabrica : listaFabricas) {
-			if (a == fabrica){
+			if (fabrica == a){
 				contador++;
+				
 			}
+			
 		}
-		
 		return contador;
 	}
 	
